@@ -1,15 +1,33 @@
 # BharatFD
 # FAQ Management System
+# 📖 Multilingual FAQ API
 
-## Features
-- Multilingual FAQ storage
-- WYSIWYG editor support
-- REST API with language selection
-- Caching with Redis
-- Auto-translation using Google Translate API
-- Django Admin Panel
+A Django REST framework-based API to store and manage **Frequently Asked Questions (FAQs)** with **multi-language support** using **Google Translate API** and **Redis caching**. The project includes **JWT authentication**, **WYSIWYG editor (CKEditor) integration**, and is Docker-ready for deployment.
 
-## Installation
+---
+
+## **🚀 Features**
+- 🌍 **Multi-language support** for FAQs (English, Hindi, Bengali, etc.)
+- ✍ **WYSIWYG editor** (`django-ckeditor`) for rich text formatting.
+- 🔥 **Fast & cached translations** using **Redis**.
+- 🔐 **JWT Authentication** for secure API access.
+- 📡 **RESTful API** built with Django REST Framework (**DRF**).
+- 📜 **Admin panel integration** for easy FAQ management.
+- 🐳 **Docker support** for easy deployment.
+- ✅ **Automated testing** with `pytest`.
+
+---
+
+## **📦 Installation**
+
+### **1️⃣ Clone the Repository**
+```bash
+git clone https://github.com/ishan1915/multilingual-faq-api.git
+cd multilingual-faq-api
+
+
+ 
+
 ```bash
 git clone <repo-url>
 cd faq_project
