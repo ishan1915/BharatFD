@@ -121,6 +121,18 @@ CKEDITOR_CONFIGS = {
     },
 }
 
+INSTALLED_APPS += ['rest_framework_simplejwt']
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+}
+
+REST_FRAMEWORK['DEFAULT_PAGINATION_CLASS'] = 'rest_framework.pagination.PageNumberPagination'
+REST_FRAMEWORK['PAGE_SIZE'] = 10
+
+
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
