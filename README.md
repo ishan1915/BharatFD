@@ -36,3 +36,51 @@ source env/bin/activate  # On Windows: env\Scripts\activate
 pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
+
+
+
+
+
+
+
+
+
+📝 API Documentation
+Authentication
+Method	Endpoint	Description
+POST	/api/token/	Get JWT token
+POST	/api/token/refresh/	Refresh JWT token
+Example Request (Token Generation)
+
+ 
+Edit
+{
+  "username": "admin",
+  "password": "yourpassword"
+}
+
+FAQ Endpoints
+Method	Endpoint	Description
+GET	/api/faqs/	List all FAQs
+POST	/api/faqs/	Create a new FAQ
+GET	/api/faqs/{id}/	Retrieve an FAQ
+PUT	/api/faqs/{id}/	Update an FAQ
+DELETE	/api/faqs/{id}/	Delete an FAQ
+
+
+Get FAQs in Different Languages
+ 
+GET /api/faqs/?lang=hi  # Fetch FAQs in Hindi
+GET /api/faqs/?lang=bn  # Fetch FAQs in Bengali
+Example Response
+
+ 
+{
+  "id": 1,
+  "question": "What is Django?",
+  "answer": "<p>Django is a Python web framework.</p>",
+  "translated_question": "डिजैंगो क्या है?"
+}
+🛠 Running Tests
+Run tests using pytest:
+pytest
